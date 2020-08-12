@@ -1,10 +1,13 @@
 /*jshint esversion: 6 */
 // GLOBAL VARIABLES
+var scrollArrow=document.querySelector('.scrollArrow');
 var navLink1 = document.querySelector('.navlink1');
 var navLink2 = document.querySelector('.navlink2');
 var navLink3 = document.querySelector('.navlink3');
 var innerHTML = navLink1.innerHTML;
 // EVENT LISTENERS
+
+// NAVIGATION
 navLink1.addEventListener('click', function(){
   navLink1.classList.add('active');
   navLink1.innerHTML = 'Home';
@@ -28,6 +31,14 @@ navLink3.addEventListener('click', function(){
   navLink2.innerHTML = innerHTML;
   navLink3.classList.add('active');
   navLink3.innerHTML='About';
+});
+scrollArrow.addEventListener('click', function(){
+  navLink1.classList.remove('active');
+  navLink1.innerHTML = innerHTML;
+  navLink2.classList.add('active');
+  navLink2.innerHTML = 'Projects';
+  navLink3.classList.remove('active');
+  navLink3.innerHTML=innerHTML;
 });
 //SMOOTH SCROLL
 $(document).ready(function() {
