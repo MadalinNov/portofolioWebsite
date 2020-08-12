@@ -312,7 +312,6 @@ h1:after{
 
   25% {
     clip: rect(38px, 350px, 122px, 30px);
-    transform: scale(1.2);
   }
 
   30% {
