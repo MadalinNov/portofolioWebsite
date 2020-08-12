@@ -13,11 +13,23 @@
     width: 25%;
     height: 5%;
   }
+  .clickToNav{
+    position: absolute;
+    color: grey;
+    font-size: 1.1rem;
+    z-index: 100;
+    left: 50%;
+    top: 88%;
+    transform: translate(-50%, -88%);
+    width: 30%;
+    text-align: center;
+  }
   nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+  /* HOME */
   #home h1, h2{
     font-size: 2rem;
   }
