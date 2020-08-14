@@ -54,12 +54,17 @@ $(document).ready(function() {
     }
   });
 });
+//PROJECT Popups
+var projects = document.querySelectorAll('.site');
+var projectsArr = Array.prototype.slice.call(projects);
+projectsArr.forEach(function(project, index){
+  project.addEventListener('click', blurToggler);
+});
 // FUNCTIONS
 // PARALLAX EFFECT ON MOUSE MOVE
 (function() {
   document.addEventListener("mousemove", parallax);
   const elem = document.querySelector("#home");
-
   function parallax(e) {
     let _w = window.innerWidth / 2;
     let _h = window.innerHeight / 2;
@@ -71,4 +76,16 @@ $(document).ready(function() {
     let x = `${_depth3}, ${_depth2}, ${_depth1}`;
     elem.style.backgroundPosition = x;
   }
+  //PROJECTS BACKGROUND animation
+  $(window).scroll(function(){
+    var scrollPos = $(this).scrollTop();
+    $('.hero-bg').css({
+      'background-size' : 100+scrollPos + '%'
+    });
+  });
 })();
+//Projects Popups
+function blurToggler(){
+  var blur = document.querySelector('#projects');
+  blur.classList.toggle('blurActive');
+}
