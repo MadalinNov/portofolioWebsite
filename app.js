@@ -1,6 +1,7 @@
 /*jshint esversion: 6 */
+var $ = jQuery;
 // GLOBAL VARIABLES
-var scrollArrow=document.querySelector('.scrollArrow');
+var scrollArrow = document.querySelector('.scrollArrow');
 var navLink1 = document.querySelector('.navlink1');
 var navLink2 = document.querySelector('.navlink2');
 var navLink3 = document.querySelector('.navlink3');
@@ -8,37 +9,37 @@ var innerHTML = navLink1.innerHTML;
 // EVENT LISTENERS
 
 // NAVIGATION
-navLink1.addEventListener('click', function(){
+navLink1.addEventListener('click', function() {
   navLink1.classList.add('active');
   navLink1.innerHTML = 'Home';
   navLink2.classList.remove('active');
   navLink2.innerHTML = innerHTML;
   navLink3.classList.remove('active');
-  navLink3.innerHTML=innerHTML;
+  navLink3.innerHTML = innerHTML;
 });
-navLink2.addEventListener('click', function(){
+navLink2.addEventListener('click', function() {
   navLink1.classList.remove('active');
   navLink1.innerHTML = innerHTML;
   navLink2.classList.add('active');
   navLink2.innerHTML = 'Projects';
   navLink3.classList.remove('active');
-  navLink3.innerHTML=innerHTML;
+  navLink3.innerHTML = innerHTML;
 });
-navLink3.addEventListener('click', function(){
+navLink3.addEventListener('click', function() {
   navLink1.classList.remove('active');
   navLink1.innerHTML = innerHTML;
   navLink2.classList.remove('active');
   navLink2.innerHTML = innerHTML;
   navLink3.classList.add('active');
-  navLink3.innerHTML='About';
+  navLink3.innerHTML = 'About';
 });
-scrollArrow.addEventListener('click', function(){
+scrollArrow.addEventListener('click', function() {
   navLink1.classList.remove('active');
   navLink1.innerHTML = innerHTML;
   navLink2.classList.add('active');
   navLink2.innerHTML = 'Projects';
   navLink3.classList.remove('active');
-  navLink3.innerHTML=innerHTML;
+  navLink3.innerHTML = innerHTML;
 });
 //SMOOTH SCROLL
 $(document).ready(function() {
@@ -57,14 +58,56 @@ $(document).ready(function() {
 //PROJECT Popups
 var projects = document.querySelectorAll('.site');
 var projectsArr = Array.prototype.slice.call(projects);
-projectsArr.forEach(function(project, index){
+var popupWrapper = document.querySelector('.popupWrapper');
+projectsArr.forEach(function(project, index) {
   project.addEventListener('click', blurToggler);
 });
+//POPUPS
+var popupOne = document.querySelector('.popup-1');
+var popupTwo = document.querySelector('.popup-2');
+var popupThree = document.querySelector('.popup-3');
+var popupFour = document.querySelector('.popup-4');
+$('.site1').on('click', function() {
+  popupOne.classList.add('popupActive');
+});
+$('.site2').on('click', function() {
+  popupTwo.classList.add('popupActive');
+});
+$('.site3').on('click', function() {
+  popupThree.classList.add('popupActive');
+});
+$('.site4').on('click', function() {
+  popupFour.classList.add('popupActive');
+});
+
 // FUNCTIONS
+
+//Projects Popups
+function blurToggler() {
+  var blur = document.querySelector('#projectsBlur');
+  blur.classList.toggle('blurActive');
+  blur.style.pointerEvents = 'none';
+}
+var closeBtn = document.querySelectorAll('.btnclose');
+var closeBtnArr = Array.prototype.slice.call(closeBtn);
+var popupActive = document.querySelectorAll('.popup');
+var popupActiveArr = Array.prototype.slice.call(popupActive);
+for (var i = 0; i < closeBtnArr.length; i++) {
+  var blur = document.querySelector('#projectsBlur');
+  var popupActive = document.querySelectorAll('.popup');
+  closeBtnArr[i].addEventListener('click', function() {
+    blur.classList.toggle('blurActive');
+    blur.style.pointerEvents = 'all';
+    for(var i = 0;i<popupActiveArr.length;i++){
+      popupActive[i].classList.remove('popupActive');
+    }
+  });
+}
 // PARALLAX EFFECT ON MOUSE MOVE
 (function() {
   document.addEventListener("mousemove", parallax);
   const elem = document.querySelector("#home");
+
   function parallax(e) {
     let _w = window.innerWidth / 2;
     let _h = window.innerHeight / 2;
@@ -77,15 +120,10 @@ projectsArr.forEach(function(project, index){
     elem.style.backgroundPosition = x;
   }
   //PROJECTS BACKGROUND animation
-  $(window).scroll(function(){
+  $(window).scroll(function() {
     var scrollPos = $(this).scrollTop();
     $('.hero-bg').css({
-      'background-size' : 100+scrollPos + '%'
+      'background-size': 100 + scrollPos + '%'
     });
   });
 })();
-//Projects Popups
-function blurToggler(){
-  var blur = document.querySelector('#projects');
-  blur.classList.toggle('blurActive');
-}

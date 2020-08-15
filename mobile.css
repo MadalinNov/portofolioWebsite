@@ -69,4 +69,8 @@
     width: 100%;
     height: 25%;
   }
+  .popup-1, .popup-2, .popup-3, .popup-4{
+    width: 90%;
+    height: 50%;
+  }
 }
