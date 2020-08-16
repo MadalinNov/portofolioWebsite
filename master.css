@@ -568,7 +568,6 @@ h1, h2 {
   height: 100vh;
   width: 100vw;
 }
-
 #projects h1 {
   z-index: 2;
 }
@@ -794,12 +793,168 @@ h1, h2 {
   top: 50%;
   transform: translate(-10%, -50%; );
   list-style: none;
-  color: #382933;
+  color: #f7e7bd;
 }
 
 /* ABOUT */
 #about {
+  position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: blue;
+  background: url(images/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.about{
+  position:absolute;
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 15px white;
+}
+.hero-bg-about{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  background: inherit;
+}
+.info{
+  width: 50%;
+  height: 100%;
+  left: 0;
+  text-align: center;
+  border-right: .5px solid lightgray;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+}
+.about h2{
+  font-size: 1.8rem;
+  padding: 10px 20px 0;
+}
+.info .techs{
+  color: lightgray;
+  position: absolute;
+  font-size: 1.5rem;
+  left: 3%;
+  top: 40%;
+  width: 35%;
+}
+.tech{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-left: .5px solid lightgray;
+  left: 100%;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+}
+.tech1, .tech2, .tech3, .tech4, .tech5, .tech6{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tech1 div{
+  width: 100%;
+  height: 50%;
+  font-size: 2rem;
+  color: orange;
+  text-align: center;
+}
+.tech p{
+  color: #393e46;
+  font-family: 'Montserrat', sans-serif;
+}
+.tech2 div{
+  width: 100%;
+  height: 50%;
+  font-size: 2rem;
+  color: yellow;
+  text-align: center;
+}
+.tech3 div{
+  width: 100%;
+  height: 50%;
+  font-size: 2rem;
+  color: yellow;
+  text-align: center;
+}
+.tech4 div{
+  width: 100%;
+  height: 50%;
+  font-size: 2rem;
+  color: yellow;
+  text-align: center;
+}
+.tech5 div{
+  width: 100%;
+  height: 50%;
+  font-size: 2rem;
+  color: yellow;
+  text-align: center;
+}
+.tech6 div{
+  width: 100%;
+  height: 50%;
+  font-size: 2rem;
+  color: orange;
+  text-align: center;
+}
+.contactDetails{
+  width: 80%;
+  height: 25%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contactDetailsMobile{
+  display: none;
+}
+.contactDetails a{
+  font-size: 2vw;
+  color: white;
+}
+.contactDetails a:hover{
+  color: lightblue;
+  animation: shake 1s linear infinite;
+}
+.contact{
+  width: 50%;
+  height: 100%;
+  left: 100%;
+  position: absolute;
+  transform: translate(-100%);
+}
+.message{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.message span{
+  font-size: 2rem;
+  color:#393e46;
+}
+.message textarea{
+  margin-top: 50px;
+}
+.message button{
+  margin-top: 50px;
+  width: 15%;
+  height: 5%;
 }
