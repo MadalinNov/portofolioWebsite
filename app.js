@@ -81,7 +81,11 @@ $('.site4').on('click', function() {
 });
 
 // FUNCTIONS
-
+//loader
+window.addEventListener('load', function(){
+  var loader = document.querySelector('#loading');
+  loader.classList.add('loader-finish');
+});
 //Projects Popups
 function blurToggler() {
   var blur = document.querySelector('#projectsBlur');

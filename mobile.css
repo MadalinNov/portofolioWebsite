@@ -5,13 +5,18 @@
 
   /* NAVBAR */
   .navWrapper {
-    position: fixed;
     z-index: 100;
     left: 50%;
     top: 95%;
     transform: translate(-50%, -95%);
-    width: 30%;
+    width: 70%;
     height: 5%;
+  }
+  nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   nav ul li a{
     color: white;
@@ -29,11 +34,6 @@
     transform: translate(-50%, -88%);
     width: 30%;
     text-align: center;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
   /* HOME */
   #home h1, h2{
@@ -53,6 +53,9 @@
     display: flex;
     flex-direction: column;
   }
+  #projectsBlur h1{
+    display: none;
+  }
   .site1{
     width: 100%;
     height: 25%;
@@ -71,6 +74,50 @@
   }
   .popup-1, .popup-2, .popup-3, .popup-4{
     width: 90%;
-    height: 50%;
+    height: 100%;
+  }
+  .popupWrapper{
+    height: 90%;
+    width: 100%;
+  }
+  .imgShowcase{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+  }
+  .mobileView{
+    height: 100%;
+    width: 25%;
+  }
+  .desktopView{
+    width: 75%;
+  }
+  .break{
+    display: none;
+  }
+  .description{
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+  .description p{
+    padding-top: 20px;
+    font-size: 1rem;
+  }
+  .tools{
+    padding-top: 20px;
+  }
+  .btnclose{
+    width: 25%;
+    height: 5%;
+  }
+  .btns{
+    width: 100%;
+    top: 90%;
   }
 }

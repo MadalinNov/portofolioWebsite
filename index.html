@@ -16,24 +16,42 @@
 </head>
 
 <body>
+  <div id="loading">
+    <div id="loading-center">
+      <div id="loading-center-absolute">
+        <div class="object" id="object_four"></div>
+        <div class="object" id="object_three"></div>
+        <div class="object" id="object_two"></div>
+        <div class="object" id="object_one"></div>
+      </div>
+      <div class='loadingText'><h1 class='loadingH1'>Loading...</h1></div>
+
+    </div>
+  </div>
+  <!-- NAV -->
+  <div class="clickToNav">
+    <p>Click to navigate</p>
+    <p><i class="fas fa-arrow-down"></i></p>
+  </div>
+  <div class="navWrapper">
+    <nav>
+      <ul>
+        <li><a class='navlink1' href="#home"><i class="fas fa-dot-circle"></i></a></li>
+        <li><a class='navlink2' href="#projects"><i class="fas fa-dot-circle"></i></a></li>
+        <li><a class='navlink3' href="#about"><i class="fas fa-dot-circle"></i></a></li>
+      </ul>
+    </nav>
+  </div>
   <div id="wrapper">
-    <div class="clickToNav">
-      <p>Click to navigate</p>
-      <p><i class="fas fa-arrow-down"></i></p>
-    </div>
-    <div class="navWrapper">
-      <nav>
-        <ul>
-          <li><a class='navlink1' href="#home"><i class="fas fa-dot-circle"></i></a></li>
-          <li><a class='navlink2' href="#projects"><i class="fas fa-dot-circle"></i></a></li>
-          <li><a class='navlink3' href="#about"><i class="fas fa-dot-circle"></i></a></li>
-        </ul>
-      </nav>
-    </div>
+    <!-- PRELOADER -->
+    <div class="loader"></div>
+    <!-- HOME SECTION -->
     <section id="home" class='section1'>
-      <h1 data-text="I'm Madalin," class='name'>I'm Madalin,</h1>
-      <h2 data-text='a front end web developer' class='function'>a front end web <u>dev</u>eloper</h2>
+      <!-- HOME ELEMENTS -->
+      <h1 class='introh1' data-text="I'm Madalin," class='name'>I'm Madalin,</h1>
+      <h2 class='introh2' data-text='a front end web developer' class='function'>a front end web <u>dev</u>eloper</h2>
       <a class='scrollArrow' href="#projects"><span><i class="fas fa-arrow-circle-down"></i></span></a>
+      <!-- BG FLOATING PARTICLES -->
       <div class="animationArea">
         <div class="particlesArea">
           <li></li>
@@ -76,6 +94,7 @@
           </div>
         </div>
       </div>
+      <!-- POPUPS -->
       <div class="popupWrapper">
         <div class="popup-1 popup">
           <button class='btnclose' type="button" name="button">Close</button>
@@ -85,22 +104,79 @@
           </div>
           <div class="description">
             <h1 class='websiteTitle'>Barber Shop</h1>
-            <p>Simple Barber Shop presentation website containing a description, price list, photo galery and a contact form <br> <br> Tech Used:</p>
-            <ul>
+            <p>Barber Shop presentation website containing a description, price list, photo galery and a contact form. <br class='break'> <br> Tech Used:</p>
+            <ul class='tools'>
               <li>HTML</li>
               <li>CSS</li>
               <li>Bootstrap</li>
             </ul>
           </div>
+          <div class="btns">
+            <button class='demo' type="button" name="button"><a href="https://madalinnov.github.io/barber-shop-website-recreation/" target='_blank'>Demo</a></button>
+            <button class='code' type="button" name="button"><a href="https://github.com/MadalinNov/barber-shop-website-recreation" target='_blank'>Code</a></button>
+          </div>
         </div>
         <div class="popup-2 popup">
           <button class='btnclose' type="button" name="button">Close</button>
+          <div class="imgShowcase">
+            <img class='mobileView' src="images\Music Player\MobileView.PNG" alt="">
+            <img class='desktopView' src="images\Music Player\DesktopView.PNG" alt="">
+          </div>
+          <div class="description">
+            <h1 class='websiteTitle'>Music player</h1>
+            <p>JavaScript Music Player containing player controls, player visualizer.<br class='break'> <br> Tech Used:</p>
+            <ul class='tools'>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="btns">
+            <button class='demo' type="button" name="button"><a href="https://madalinnov.github.io/musicPlayer/" target='_blank'>Demo</a></button>
+            <button class='code' type="button" name="button"><a href="https://github.com/MadalinNov/musicPlayer" target='_blank'>Code</a></button>
+          </div>
         </div>
         <div class="popup-3 popup">
           <button class='btnclose' type="button" name="button">Close</button>
+          <div class="imgShowcase">
+            <img class='mobileView' src="images\Office Tools\MobileView.PNG" alt="">
+            <img class='desktopView' src="images\Office Tools\Desktop View.PNG" alt="">
+          </div>
+          <div class="description">
+            <h1 class='websiteTitle'>Music player</h1>
+            <p>Office Tools page containing a presentation page, products and a contact page.<br class='break'> <br> Tech Used:</p>
+            <ul class='tools'>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="btns">
+            <button class='demo' type="button" name="button"><a href="https://madalinnov.github.io/officeTools/" target='_blank'>Demo</a></button>
+            <button class='code' type="button" name="button"><a href="https://github.com/MadalinNov/officeTools" target='_blank'>Code</a></button>
+          </div>
         </div>
         <div class="popup-4 popup">
           <button class='btnclose' type="button" name="button">Close</button>
+          <div class="imgShowcase">
+            <img class='mobileView' src="images\Smart House Items\MobileView.PNG" alt="">
+            <img class='desktopView' src="images\Smart House Items\DesktopView.PNG" alt="">
+          </div>
+          <div class="description">
+            <h1 class='websiteTitle'>Music player</h1>
+            <p>Smart House Tools Page containing containing a store page, a contact form and an about page.<br class='break'> <br> Tech Used:</p>
+            <ul class='tools'>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+            </ul>
+          </div>
+          <div class="btns">
+            <button class='demo' type="button" name="button"><a href="https://madalinnov.github.io/practiceWebsite/" target='_blank'>Demo</a></button>
+            <button class='code' type="button" name="button"><a href="https://github.com/MadalinNov/practiceWebsite" target='_blank'>Code</a></button>
+          </div>
         </div>
       </div>
     </section>
