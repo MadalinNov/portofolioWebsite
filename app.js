@@ -111,7 +111,6 @@ for (var i = 0; i < closeBtnArr.length; i++) {
 (function() {
   document.addEventListener("mousemove", parallax);
   const elem = document.querySelector("#home");
-
   function parallax(e) {
     let _w = window.innerWidth / 2;
     let _h = window.innerHeight / 2;
@@ -131,3 +130,8 @@ for (var i = 0; i < closeBtnArr.length; i++) {
     });
   });
 })();
+
+function submitForm() {
+  // $('form').submit();
+  $('input[type="text"],input[type="email"], textarea').val('');
+}

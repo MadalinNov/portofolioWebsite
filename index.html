@@ -24,7 +24,9 @@
         <div class="object" id="object_two"></div>
         <div class="object" id="object_one"></div>
       </div>
-      <div class='loadingText'><h1 class='loadingH1'>Loading...</h1></div>
+      <div class='loadingText'>
+        <h1 class='loadingH1'>Loading...</h1>
+      </div>
 
     </div>
   </div>
@@ -189,22 +191,34 @@
           <p class='techs'>Technologies I can use:</p>
           <div class="tech">
             <div class="tech1">
-              <div><p class='techName'>HTML5</p><i class="icon fab fa-html5"></i></div>
+              <div>
+                <p class='techName'>HTML5</p><i class="icon fab fa-html5"></i>
+              </div>
             </div>
             <div class="tech2">
-              <div><p class='techName'>CSS</p><i class="fab fa-css3-alt"></i></div>
+              <div>
+                <p class='techName'>CSS</p><i class="fab fa-css3-alt"></i>
+              </div>
             </div>
             <div class="tech3">
-              <div><p class='techName'>JavaScript</p><i class="fab fa-js-square"></i></div>
+              <div>
+                <p class='techName'>JavaScript</p><i class="fab fa-js-square"></i>
+              </div>
             </div>
             <div class="tech4">
-              <div><p class='techName'>Bootstrap</p><i class="fab fa-bootstrap"></i></div>
+              <div>
+                <p class='techName'>Bootstrap</p><i class="fab fa-bootstrap"></i>
+              </div>
             </div>
             <div class="tech5">
-                <div><p class='techName'>jQuery</p><i class="fab fa-phoenix-framework"></i></div>
+              <div>
+                <p class='techName'>jQuery</p><i class="fab fa-phoenix-framework"></i>
+              </div>
             </div>
             <div class="tech6">
-              <div><p class='techName'>JS ES6</p><i class="fab fa-js-square"></i></div>
+              <div>
+                <p class='techName'>JS ES6</p><i class="fab fa-js-square"></i>
+              </div>
             </div>
           </div>
           <div class="contactDetails">
@@ -221,11 +235,13 @@
           </div>
           <h2>Contact Me</h2>
           <div class="message">
-            <label for="">
-              <span>Your Message</span>
-            </label>
-            <textarea name="mail" rows="8" cols="80"></textarea>
-            <button type="submit" name="button">Send</button>
+            <form action="mailto:madalinnov@gmail.com?subject=Hello!" method="post" enctype="text/plain">
+              <input class='inputText' type="text" name="" value="" placeholder="Name">
+              <input class='inputText' type="email" name="" value="" placeholder="eMail">
+              <textarea name="mail" rows="8" cols="80" placeholder="Your Message"></textarea>
+              <!-- <button type="button" name="button" onclick="submitForm()">Send</button> -->
+              <input class='submit' type="submit" name="" value="Send" onclick="submitForm()" >
+            </form>
           </div>
 
         </div>
