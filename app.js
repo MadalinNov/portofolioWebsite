@@ -111,6 +111,7 @@ for (var i = 0; i < closeBtnArr.length; i++) {
 (function() {
   document.addEventListener("mousemove", parallax);
   const elem = document.querySelector("#home");
+  const elem2 = document.querySelector("#about");
   function parallax(e) {
     let _w = window.innerWidth / 2;
     let _h = window.innerHeight / 2;
@@ -121,6 +122,7 @@ for (var i = 0; i < closeBtnArr.length; i++) {
     let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
     let x = `${_depth3}, ${_depth2}, ${_depth1}`;
     elem.style.backgroundPosition = x;
+    elem2.style.backgroundPosition = x;
   }
   //PROJECTS BACKGROUND animation
   $(window).scroll(function() {
