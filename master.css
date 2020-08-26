@@ -9,7 +9,7 @@ body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 section {
@@ -28,11 +28,10 @@ a:hover {
 
 button:focus {
   outline: none;
-
 }
-textarea{
+textarea {
   resize: none;
-  overflow:hidden;
+  overflow: hidden;
 }
 /* LOADER */
 #loading {
@@ -92,18 +91,18 @@ textarea{
   animation-delay: 0.2s;
 }
 #object_two {
-    left: 65px;
-    top: 65px;
-    width: 70px;
-    height: 70px;
-    -webkit-animation-delay: 0.1s;
-    animation-delay: 0.1s;
+  left: 65px;
+  top: 65px;
+  width: 70px;
+  height: 70px;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 #object_one {
-    left: 75px;
-    top: 75px;
-    width: 50px;
-    height: 50px;
+  left: 75px;
+  top: 75px;
+  width: 50px;
+  height: 50px;
 }
 @keyframes loaderAnimation {
   50% {
@@ -118,7 +117,7 @@ textarea{
     transform: rotate(0deg);
   }
 }
-.loadingText{
+.loadingText {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -126,13 +125,13 @@ textarea{
   text-align: center;
   transition: opacity 0.5s ease;
 }
-.loadingH1{
+.loadingH1 {
   color: #b0cac7;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   animation: shake 1s linear infinite;
   font-size: 1.5rem;
 }
-.loader-finish{
+.loader-finish {
   opacity: 0;
   pointer-events: none;
 }
@@ -218,7 +217,7 @@ nav ul li a:hover {
   background: rgba(255, 255, 255, 0.2);
   animation: animate 20s linear infinite;
   filter: blur(5px);
-  bottom: -40px
+  bottom: -40px;
 }
 
 .particlesArea li:nth-child(1) {
@@ -265,7 +264,7 @@ nav ul li a:hover {
 @keyframes animate {
   0% {
     transform: translateY(0);
-    opacity: 1
+    opacity: 1;
   }
 
   100% {
@@ -292,7 +291,8 @@ nav ul li a:hover {
 }
 
 /* INTRO TEXT */
-h1, h2 {
+h1,
+h2 {
   font-size: 4rem;
   color: lightgray;
   text-align: center;
@@ -525,25 +525,40 @@ h1, h2 {
 }
 
 @keyframes shake {
-  5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
+  5%,
+  15%,
+  25%,
+  35%,
+  55%,
+  65%,
+  75%,
+  95% {
     transform: translate(1px, 1px) rotate(0deg);
     filter: blur(50px), grayscale(0.5);
     opacity: 1;
   }
 
-  10%, 30%, 40%, 50%, 70%, 80%, 90% {
+  10%,
+  30%,
+  40%,
+  50%,
+  70%,
+  80%,
+  90% {
     transform: translate(-1px, -2px) rotate(-2deg);
     filter: blur(20px), grayscale(0.1);
     opacity: 0.8;
   }
 
-  20%, 60% {
+  20%,
+  60% {
     filter: blur(0.01em);
     transform: translate(-0.018em, 0.018em) rotate(0deg);
     opacity: 0.8;
   }
 
-  45%, 85% {
+  45%,
+  85% {
     filter: blur(0.03em);
     transform: translate(0.018em, -0.018em) rotate(0deg);
     opacity: 1;
@@ -578,39 +593,46 @@ h1, h2 {
 
 .projectsWrapper {
   position: absolute;
-  width: 80%;
-  height: 90%;
+  min-width: 80%;
+  max-height: 90%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .blurActive {
   transition: 0.3s ease;
   filter: blur(20px) grayscale(0.6);
 }
-
+.site {
+  width: 500px;
+  height: 350px;
+}
 .site1 {
   grid-row: 1/2;
   grid-column: 1/2;
 }
 
 .site2 {
-  grid-row: 1/2;
-  grid-column: 2/3;
-}
-
-.site3 {
   grid-row: 2/3;
   grid-column: 1/2;
 }
 
-.site4 {
+.site3 {
   grid-row: 2/3;
   grid-column: 2/3;
+}
+
+.site4 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.site5 {
+  grid-row: 1/2;
+  grid-column: 3/4;
 }
 
 .wrapp {
@@ -626,13 +648,13 @@ h1, h2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
   cursor: pointer;
 }
 
 #projects img:hover {
   transform: scale(0.95);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 #projectsBlur {
@@ -641,7 +663,11 @@ h1, h2 {
   min-width: 100%;
 }
 
-.popup-1, .popup-2, .popup-3, .popup-4 {
+.popup-1,
+.popup-2,
+.popup-3,
+.popup-4,
+.popup-5 {
   width: 60%;
   height: 80%;
   position: absolute;
@@ -679,8 +705,8 @@ h1, h2 {
   left: 100%;
   transform: translate(-100%);
   position: absolute;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #FF5366;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ff5366;
   cursor: pointer;
   border: 4px solid transparent;
   color: lightgray;
@@ -688,7 +714,9 @@ h1, h2 {
   font-size: 1.2rem;
 }
 
-.btnclose:hover, .code:hover, .demo:hover {
+.btnclose:hover,
+.code:hover,
+.demo:hover {
   transition: 0.2s ease;
   animation: borderAnimation 2s linear reverse infinite;
 }
@@ -696,7 +724,7 @@ h1, h2 {
 .btns {
   position: absolute;
   width: 50%;
-  height: 5%;
+  height: 8%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -705,12 +733,13 @@ h1, h2 {
   transform: translate(-50%, -100%);
 }
 
-.code, .demo {
+.code,
+.demo {
   z-index: 1000;
-  width: 25%;
+  width: 30%;
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #FF5366;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ff5366;
   cursor: pointer;
   border: 4px solid transparent;
   color: lightgray;
@@ -721,7 +750,7 @@ h1, h2 {
 @keyframes borderAnimation {
   0% {
     opacity: 1;
-    filter: blur(10px; );
+    filter: blur(1px);
     transition: 0.2s ease;
   }
 
@@ -741,28 +770,28 @@ h1, h2 {
     border: 4px solid #006a71;
   }
 }
-.websiteTitle{
+.websiteTitle {
   width: 100%;
 }
 .imgShowcase {
   width: 100%;
   height: 70%;
   position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-
-.mobileView {
-  width: 20%;
-  height: 100%;
+  top: 80%;
+  transform: translate(0, -80%);
 }
 
 .desktopView {
-  position: absolute;
-  width: 40%;
-  height: 100%;
-  padding-left: 10px;
+  width: 60%;
+  height: 70%;
 }
+
+/* .desktopView {
+  position: absolute;
+  width: 30%;
+  height: 70%;
+  padding-left: 10px;
+} */
 
 .description {
   position: absolute;
@@ -778,7 +807,7 @@ h1, h2 {
   position: absolute;
   left: 50%;
   top: 2%;
-  transform: translate(-50%, -2%; );
+  transform: translate(-50%, -2%);
   color: #382933;
   font-size: 1.5rem;
 }
@@ -789,17 +818,26 @@ h1, h2 {
   position: absolute;
   transform: translate(-50%, -20%);
   width: 80%;
-  color: #382933;
+  color: #e4e3e3;
   font-size: 1.1rem;
+  background-color: #84a9ac;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
-
 .tools {
+  width: 80%;
+  background-color: #84a9ac;
   position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translate(-10%, -50%; );
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -80%);
   list-style: none;
-  color: #f7e7bd;
+  color: #e4e3e3;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
 /* ABOUT */
@@ -812,8 +850,8 @@ h1, h2 {
   background-size: cover;
   background-attachment: fixed;
 }
-.about{
-  position:absolute;
+.about {
+  position: absolute;
   width: 80%;
   height: 80%;
   left: 50%;
@@ -821,27 +859,27 @@ h1, h2 {
   transform: translate(-50%, -50%);
   box-shadow: 5px 5px 15px white;
 }
-.hero-bg-about{
-  position:absolute;
+.hero-bg-about {
+  position: absolute;
   width: 100%;
   height: 100%;
   filter: blur(5px) grayscale(0.7);
   background: inherit;
 }
-.info{
+.info {
   width: 50%;
   height: 100%;
   left: 0;
   text-align: center;
-  border-right: .5px solid lightgray;
-  font-family: 'Montserrat', sans-serif;
+  border-right: 0.5px solid lightgray;
+  font-family: "Montserrat", sans-serif;
   position: absolute;
 }
-.about h2{
+.about h2 {
   font-size: 1.8rem;
   padding: 10px 20px 0;
 }
-.info .techs{
+.info .techs {
   color: lightgray;
   position: absolute;
   font-size: 1.5rem;
@@ -849,11 +887,11 @@ h1, h2 {
   top: 40%;
   width: 35%;
 }
-.tech{
+.tech {
   position: absolute;
   width: 50%;
   height: 50%;
-  border-left: .5px solid lightgray;
+  border-left: 0.5px solid lightgray;
   left: 100%;
   top: 50%;
   transform: translate(-100%, -50%);
@@ -861,59 +899,64 @@ h1, h2 {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
 }
-.tech1, .tech2, .tech3, .tech4, .tech5, .tech6{
+.tech1,
+.tech2,
+.tech3,
+.tech4,
+.tech5,
+.tech6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.tech1 div{
+.tech1 div {
   width: 100%;
   height: 50%;
   font-size: 2rem;
   color: orange;
   text-align: center;
 }
-.tech p{
+.tech p {
   color: lightgray;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-.tech2 div{
+.tech2 div {
   width: 100%;
   height: 50%;
   font-size: 2rem;
   color: yellow;
   text-align: center;
 }
-.tech3 div{
+.tech3 div {
   width: 100%;
   height: 50%;
   font-size: 2rem;
   color: yellow;
   text-align: center;
 }
-.tech4 div{
+.tech4 div {
   width: 100%;
   height: 50%;
   font-size: 2rem;
   color: yellow;
   text-align: center;
 }
-.tech5 div{
+.tech5 div {
   width: 100%;
   height: 50%;
   font-size: 2rem;
   color: yellow;
   text-align: center;
 }
-.tech6 div{
+.tech6 div {
   width: 100%;
   height: 50%;
   font-size: 2rem;
   color: orange;
   text-align: center;
 }
-.contactDetails{
+.contactDetails {
   width: 80%;
   height: 25%;
   position: absolute;
@@ -926,36 +969,38 @@ h1, h2 {
   align-items: center;
   justify-content: space-evenly;
 }
-.contactDetailsMobile{
+.contactDetailsMobile {
   display: none;
 }
-.contactDetails a{
+.contactDetails a {
   font-size: 2vw;
   color: white;
 }
-.contactDetails a:hover{
+.contactDetails a:hover {
   color: lightblue;
   animation: shake 1s linear infinite;
 }
-.contact{
+.contact {
   width: 50%;
   height: 100%;
   left: 100%;
   position: absolute;
   transform: translate(-100%);
 }
-.message{
+.message {
   width: 100%;
   height: 80%;
 }
-form{
+form {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-.message textarea, .inputText{
+.message textarea,
+.inputText {
   border: none;
   background-color: inherit;
   border-bottom: 2px solid #f7e7bd;
@@ -963,14 +1008,14 @@ form{
   margin-bottom: 50px;
   width: 40%;
   font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #393e46;
 }
-.message .submit{
+.message .submit {
   margin-top: 50px;
   width: 15%;
   height: 5%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border: 2px solid transparent;
   border-bottom: 2px solid #f7e7bd;
   background: inherit;
@@ -978,32 +1023,33 @@ form{
   transition: 0.1s ease;
   cursor: pointer;
 }
-.submit:focus{
+.submit:focus {
   outline: none;
 }
-.message .submit:hover{
+.message .submit:hover {
   transition: 0.1s ease;
   transform: scale(1.05);
   border: 2px solid #f7e7bd;
   border-top: none;
   animation: shake 2s linear infinite;
 }
-::placeholder{
+::placeholder {
   font-size: 1.2rem;
   text-align: center;
   color: #f7e7bd;
 }
-textarea:focus, .inputText:focus{
+textarea:focus,
+.inputText:focus {
   outline: none;
-  animation: contactAnim .2s linear forwards;
+  animation: contactAnim 0.2s linear forwards;
 }
 @keyframes contactAnim {
-  0%{
+  0% {
     width: 40%;
     height: 4%;
     border: 1px solid transparent;
   }
-  100%{
+  100% {
     width: 45%;
     height: 7%;
     border: 2px solid #f7e7bd;
@@ -1013,27 +1059,27 @@ textarea:focus, .inputText:focus{
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1623px) {
-  .tech{
+  .tech {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     /* grid-gap: 50px; */
   }
-  .tech p{
+  .tech p {
     font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 1258px) {
-  .tech{
+  .tech {
     grid-gap: 10px;
   }
 }
-@media screen and (max-width:1050px) {
-  .tech{
+@media screen and (max-width: 1050px) {
+  .tech {
     height: 25%;
     top: 30%;
     border: none;
   }
-  .about h2{
+  .about h2 {
     font-size: 1.2rem;
   }
 }
@@ -1052,21 +1098,23 @@ textarea:focus, .inputText:focus{
     width: 70%;
     height: 5%;
   }
-  nav ul{
+  nav ul {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  nav ul li a{
+  nav ul li a {
     color: white;
     transition: 0.2s ease;
     opacity: 0.7;
   }
-  .navlink1, .navlink2, .navlink3{
+  .navlink1,
+  .navlink2,
+  .navlink3 {
     font-size: 1.5rem;
   }
-  .clickToNav{
+  .clickToNav {
     position: absolute;
     color: grey;
     font-size: 1.1rem;
@@ -1078,14 +1126,15 @@ textarea:focus, .inputText:focus{
     text-align: center;
   }
   /* HOME */
-  #home h1, h2{
+  #home h1,
+  h2 {
     font-size: 2rem;
   }
-  .scrollArrow{
+  .scrollArrow {
     font-size: 1.8rem;
   }
   /* PROJECTS */
-  .projectsWrapper{
+  .projectsWrapper {
     position: absolute;
     width: 95%;
     height: 95%;
@@ -1095,34 +1144,37 @@ textarea:focus, .inputText:focus{
     display: flex;
     flex-direction: column;
   }
-  #projectsBlur h1{
+  #projectsBlur h1 {
     display: none;
   }
-  .site1{
+  .site1 {
     width: 100%;
     height: 25%;
   }
-  .site2{
+  .site2 {
     width: 100%;
     height: 25%;
   }
-  .site3{
+  .site3 {
     width: 100%;
     height: 25%;
   }
-  .site4{
+  .site4 {
     width: 100%;
     height: 25%;
   }
-  .popup-1, .popup-2, .popup-3, .popup-4{
+  .popup-1,
+  .popup-2,
+  .popup-3,
+  .popup-4 {
     width: 90%;
     height: 100%;
   }
-  .popupWrapper{
+  .popupWrapper {
     height: 90%;
     width: 100%;
   }
-  .imgShowcase{
+  .imgShowcase {
     width: 100%;
     height: 30%;
     position: absolute;
@@ -1130,85 +1182,85 @@ textarea:focus, .inputText:focus{
     left: 50%;
     transform: translate(-50%, -15%);
   }
-  .mobileView{
+  .mobileView {
     height: 100%;
     width: 25%;
   }
-  .desktopView{
+  .desktopView {
     width: 75%;
   }
-  .break{
+  .break {
     display: none;
   }
-  .description{
+  .description {
     position: absolute;
     width: 100%;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -80%);
   }
-  .description p{
+  .description p {
     padding-top: 20px;
     font-size: 1rem;
   }
-  .tools{
+  .tools {
     padding-top: 20px;
   }
-  .btnclose{
+  .btnclose {
     width: 25%;
     height: 5%;
   }
-  .btns{
+  .btns {
     width: 100%;
     top: 90%;
   }
-  .websiteTitle{
+  .websiteTitle {
     width: 80%;
     padding-bottom: 20px;
   }
-  .about{
+  .about {
     width: 100%;
     height: 90%;
   }
-  .info{
+  .info {
     width: 100%;
     height: 50%;
     border: none;
   }
-  .info h2{
+  .info h2 {
     width: 100%;
     font-size: 1.1rem;
   }
-  .info p{
+  .info p {
     width: 100%;
     font-size: 1.1rem;
     top: 25%;
   }
-  .techs{
+  .techs {
     display: none;
   }
-  .tech{
+  .tech {
     width: 100%;
     height: 70%;
     top: 60%;
   }
-  .tech1{
+  .tech1 {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  .contactDetails{
+  .contactDetails {
     display: none;
   }
-  .contact{
+  .contact {
     position: absolute;
     width: 100%;
     height: 40%;
     top: 50%;
   }
-  .contact h2{
+  .contact h2 {
     font-size: 2rem;
   }
-  .contactDetailsMobile{
+  .contactDetailsMobile {
     width: 80%;
     height: 10%;
     position: absolute;
@@ -1221,7 +1273,7 @@ textarea:focus, .inputText:focus{
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .message{
+  .message {
     display: none;
   }
 }

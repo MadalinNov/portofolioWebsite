@@ -12,21 +12,23 @@
     width: 70%;
     height: 5%;
   }
-  nav ul{
+  nav ul {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  nav ul li a{
+  nav ul li a {
     color: white;
     transition: 0.2s ease;
     opacity: 0.7;
   }
-  .navlink1, .navlink2, .navlink3{
+  .navlink1,
+  .navlink2,
+  .navlink3 {
     font-size: 1.5rem;
   }
-  .clickToNav{
+  .clickToNav {
     position: absolute;
     color: grey;
     font-size: 1.1rem;
@@ -38,14 +40,15 @@
     text-align: center;
   }
   /* HOME */
-  #home h1, h2{
+  #home h1,
+  h2 {
     font-size: 2rem;
   }
-  .scrollArrow{
+  .scrollArrow {
     font-size: 1.8rem;
   }
   /* PROJECTS */
-  .projectsWrapper{
+  .projectsWrapper {
     position: absolute;
     width: 95%;
     height: 95%;
@@ -55,34 +58,42 @@
     display: flex;
     flex-direction: column;
   }
-  #projectsBlur h1{
+  #projectsBlur h1 {
     display: none;
   }
-  .site1{
+  .site {
+    margin: auto;
+    width: 80%;
+    height: 20%;
+  }
+  /* .site1 {
+    width: 70%;
+    height: 25%;
+  }
+  .site2 {
     width: 100%;
     height: 25%;
   }
-  .site2{
+  .site3 {
     width: 100%;
     height: 25%;
   }
-  .site3{
+  .site4 {
     width: 100%;
     height: 25%;
-  }
-  .site4{
-    width: 100%;
-    height: 25%;
-  }
-  .popup-1, .popup-2, .popup-3, .popup-4{
+  } */
+  .popup-1,
+  .popup-2,
+  .popup-3,
+  .popup-4 {
     width: 90%;
     height: 100%;
   }
-  .popupWrapper{
+  .popupWrapper {
     height: 90%;
     width: 100%;
   }
-  .imgShowcase{
+  .imgShowcase {
     width: 100%;
     height: 30%;
     position: absolute;
@@ -90,82 +101,94 @@
     left: 50%;
     transform: translate(-50%, -15%);
   }
-  .mobileView{
+  /* .mobileView{
     height: 100%;
     width: 25%;
-  }
-  .desktopView{
+  } */
+  .desktopView {
     width: 75%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
   }
-  .break{
-    display: none;
-  }
-  .description{
+  .description {
     position: absolute;
     width: 100%;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -80%);
   }
-  .description p{
-    padding-top: 20px;
-    font-size: 1rem;
+  .description p {
+    font-size: 12px;
+    padding: 0;
+    background-color: inherit;
+    box-shadow: none;
+    color: #1a1a2e;
+    padding-top: 10px;
   }
-  .tools{
-    padding-top: 20px;
+  .tools {
+    background-color: inherit;
+    width: 100%;
+    box-shadow: none;
   }
-  .btnclose{
+  .btnclose {
     width: 25%;
-    height: 5%;
+    height: 7%;
   }
-  .btns{
+  .btns {
     width: 100%;
     top: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .websiteTitle{
-    width: 50%;
-    margin-bottom: 20px;
+
+  .websiteTitle {
+    width: 100%;
+    position: absolute;
+    padding: 0;
   }
-  .about{
+  .about {
     width: 100%;
     height: 90%;
   }
-  .info{
+  .info {
     width: 100%;
     height: 50%;
     border: none;
   }
-  .info h2{
+  .info h2 {
     width: 100%;
     font-size: 1.1rem;
   }
-  .info p{
+  .info p {
     width: 100%;
     font-size: 1.1rem;
     top: 25%;
   }
-  .techs{
+  .techs {
     display: none;
   }
-  .tech{
+  .tech {
     width: 100%;
     height: 70%;
     top: 60%;
   }
-  .tech1{
+  .tech1 {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  .contactDetails{
+  .contactDetails {
     display: none;
   }
-  .contact{
+  .contact {
     position: absolute;
     width: 100%;
     height: 40%;
     top: 60%;
   }
-  .contactDetailsMobile{
+  .contactDetailsMobile {
     width: 80%;
     height: 10%;
     position: absolute;
@@ -178,7 +201,7 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .message{
+  .message {
     display: none;
   }
 }
