@@ -47,17 +47,6 @@
   .scrollArrow {
     font-size: 1.8rem;
   }
-  /* PROJECTS */
-  .projectsWrapper {
-    position: absolute;
-    width: 95%;
-    height: 95%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-  }
   #projectsBlur h1 {
     display: none;
   }
@@ -66,22 +55,6 @@
     width: 80%;
     height: 20%;
   }
-  /* .site1 {
-    width: 70%;
-    height: 25%;
-  }
-  .site2 {
-    width: 100%;
-    height: 25%;
-  }
-  .site3 {
-    width: 100%;
-    height: 25%;
-  }
-  .site4 {
-    width: 100%;
-    height: 25%;
-  } */
   .popup-1,
   .popup-2,
   .popup-3,
@@ -120,7 +93,7 @@
     transform: translate(-50%, -80%);
   }
   .description p {
-    font-size: 12px;
+    font-size: 15px;
     padding: 0;
     background-color: inherit;
     box-shadow: none;
@@ -147,7 +120,15 @@
   .websiteTitle {
     width: 100%;
     position: absolute;
+    margin-bottom: 60px;
+  }
+  .description h1 {
+    font-size: 20px;
+  }
+  .tools {
     padding: 0;
+    position: absolute;
+    top: 70%;
   }
   .about {
     width: 100%;
@@ -193,8 +174,8 @@
     height: 10%;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 40%;
+    transform: translate(-50%, -40%);
     font-size: 2rem;
     display: flex;
     color: white;
