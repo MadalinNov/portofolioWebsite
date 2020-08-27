@@ -48,12 +48,17 @@
     font-size: 1.8rem;
   }
   #projectsBlur h1 {
-    display: none;
+    display: block;
+    font-size: 30px;
+  }
+  .projectsWrapper {
+    grid-template-rows: repeat(auto-fit, 5rem);
+    top: 45%;
   }
   .site {
     margin: auto;
-    width: 80%;
-    height: 20%;
+    width: 250px;
+    height: 100px;
   }
   .popup-1,
   .popup-2,
@@ -88,6 +93,7 @@
   .description {
     position: absolute;
     width: 100%;
+    height: 50%;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -80%);
