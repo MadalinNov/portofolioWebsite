@@ -52,8 +52,9 @@
     font-size: 30px;
   }
   .projectsWrapper {
-    grid-template-rows: repeat(auto-fit, 5rem);
-    top: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .site {
     margin: auto;
@@ -90,6 +91,10 @@
     left: 50%;
     transform: translate(-50%);
   }
+  .description h1 {
+    top: 0;
+    font-size: 20px;
+  }
   .description {
     position: absolute;
     width: 100%;
@@ -99,12 +104,13 @@
     transform: translate(-50%, -80%);
   }
   .description p {
+    width: 100%;
     font-size: 15px;
     padding: 0;
     background-color: inherit;
     box-shadow: none;
-    color: #1a1a2e;
-    padding-top: 10px;
+    color: #364449;
+    padding-top: 20px;
   }
   .tools {
     background-color: inherit;
@@ -127,9 +133,6 @@
     width: 100%;
     position: absolute;
     margin-bottom: 60px;
-  }
-  .description h1 {
-    font-size: 20px;
   }
   .tools {
     padding: 0;

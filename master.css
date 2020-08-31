@@ -601,7 +601,6 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
   grid-template-rows: repeat(auto-fit 20rem);
-  grid-gap: 30px;
 }
 
 .blurActive {
@@ -609,8 +608,8 @@ h2 {
   filter: blur(20px) grayscale(0.6);
 }
 .site {
-  width: 350px;
-  height: 300px;
+  width: 250px;
+  height: 200px;
 }
 .wrapp {
   height: 95%;
@@ -782,17 +781,18 @@ h2 {
 .description h1 {
   text-align: center;
   position: absolute;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -20%);
   color: #1a1a2e;
   font-size: 1.5rem;
 }
 
 .description p {
   left: 50%;
-  top: 20%;
+  top: 50%;
   position: absolute;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -50%);
   width: 90%;
   height: 250px;
   color: #e4e3e3;
@@ -1111,6 +1111,16 @@ textarea:focus,
   }
   .scrollArrow {
     font-size: 1.8rem;
+  }
+  .projectsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .site {
+    margin: auto;
+    width: 300px;
+    height: 150px;
   }
   #projectsBlur h1 {
     display: none;
