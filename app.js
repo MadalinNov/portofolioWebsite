@@ -72,6 +72,7 @@ var popupTwo = document.querySelector(".popup-2");
 var popupThree = document.querySelector(".popup-3");
 var popupFour = document.querySelector(".popup-4");
 var popupFive = document.querySelector(".popup-5");
+var popupSix = document.querySelector(".popup-6");
 $(".site1").on("click", function () {
   popupOne.classList.add("popupActive");
 });
@@ -87,13 +88,17 @@ $(".site4").on("click", function () {
 $(".site5").on("click", function () {
   popupFive.classList.add("popupActive");
 });
-
-// FUNCTIONS
+$(".site6").on("click", function () {
+  popupSix.classList.add("popupActive");
+});
 //loader
 window.addEventListener("load", function () {
   var loader = document.querySelector("#loading");
   loader.classList.add("loader-finish");
 });
+
+// FUNCTIONS
+
 //Projects Popups
 function blurToggler() {
   var blur = document.querySelector("#projectsBlur");
@@ -115,6 +120,7 @@ for (var i = 0; i < closeBtnArr.length; i++) {
     }
   });
 }
+
 // PARALLAX EFFECT ON MOUSE MOVE
 (function () {
   document.addEventListener("mousemove", parallax);
@@ -138,6 +144,7 @@ for (var i = 0; i < closeBtnArr.length; i++) {
     elem.style.backgroundPosition = x;
     elem2.style.backgroundPosition = x;
   }
+
   //PROJECTS BACKGROUND animation
   $(window).scroll(function () {
     var scrollPos = $(this).scrollTop();
@@ -146,7 +153,6 @@ for (var i = 0; i < closeBtnArr.length; i++) {
     });
   });
 })();
-
 function submitForm() {
   // $('form').submit();
   $('input[type="text"],input[type="email"], textarea').val("");

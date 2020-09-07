@@ -64,7 +64,9 @@
   .popup-1,
   .popup-2,
   .popup-3,
-  .popup-4 {
+  .popup-4,
+  .popup-5,
+  .popup-6 {
     width: 90%;
     height: 100%;
   }
@@ -85,7 +87,7 @@
     width: 25%;
   } */
   .desktopView {
-    width: 75%;
+    width: 90%;
     height: 80%;
     position: absolute;
     left: 50%;
@@ -104,13 +106,14 @@
     transform: translate(-50%, -80%);
   }
   .description p {
+    top: 30%;
+    position: absolute;
     width: 100%;
     font-size: 15px;
     padding: 0;
     background-color: inherit;
     box-shadow: none;
-    color: #364449;
-    padding-top: 20px;
+    color: black;
   }
   .tools {
     background-color: inherit;
@@ -128,16 +131,18 @@
     flex-direction: row;
     justify-content: space-between;
   }
-
-  .websiteTitle {
+  .description .websiteTitle {
+    color: black;
     width: 100%;
     position: absolute;
-    margin-bottom: 60px;
+    margin: 0;
+    padding: 0;
   }
   .tools {
     padding: 0;
     position: absolute;
     top: 70%;
+    color: black;
   }
   .about {
     width: 100%;

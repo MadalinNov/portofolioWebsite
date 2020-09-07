@@ -608,8 +608,8 @@ h2 {
   filter: blur(20px) grayscale(0.6);
 }
 .site {
-  width: 250px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
 }
 .wrapp {
   height: 95%;
@@ -638,12 +638,12 @@ h2 {
   height: 100vh;
   min-width: 100%;
 }
-
 .popup-1,
 .popup-2,
 .popup-3,
 .popup-4,
-.popup-5 {
+.popup-5,
+.popup-6 {
   width: 60%;
   height: 80%;
   position: absolute;
@@ -784,7 +784,7 @@ h2 {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -20%);
-  color: #1a1a2e;
+  color: #e4e3e3;
   font-size: 1.5rem;
 }
 
@@ -794,17 +794,14 @@ h2 {
   position: absolute;
   transform: translate(-50%, -50%);
   width: 90%;
-  height: 250px;
+  height: 150px;
   color: #e4e3e3;
   font-size: 1.1rem;
-  background-color: #84a9ac;
   padding: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .tools {
   height: 70px;
   width: 90%;
-  background-color: #84a9ac;
   position: absolute;
   left: 50%;
   top: 80%;
