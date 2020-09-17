@@ -1,6 +1,6 @@
 @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
   body {
-    overflow: hidden;
+    overflow: scroll;
   }
 
   /* NAVBAR */
@@ -26,7 +26,7 @@
   .navlink1,
   .navlink2,
   .navlink3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .clickToNav {
     position: absolute;
