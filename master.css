@@ -572,7 +572,7 @@ h2 {
 /* PROJECTS */
 #projects {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   transition: 0.3s ease;
 }
@@ -593,7 +593,7 @@ h2 {
 .projectsWrapper {
   position: absolute;
   min-width: 80%;
-  min-height: 90%;
+  height: 65%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -625,11 +625,13 @@ h2 {
   height: 100%;
   transition: 0.5s ease;
   cursor: pointer;
+  box-shadow: -5px 5px 15px 10px rgba(0, 0, 0, 0.2);
 }
 
 #projects img:hover {
-  transform: scale(0.95);
+  transform: scale(1.05);
   transition: 0.5s ease;
+  box-shadow: -10px 10px 15px 10px rgba(0, 0, 0, 0.2);
 }
 
 #projectsBlur {
