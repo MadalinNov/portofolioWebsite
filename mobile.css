@@ -47,6 +47,9 @@
   .scrollArrow {
     font-size: 1.8rem;
   }
+  #projects{
+    min-heigth:100%;
+  }
   #projectsBlur h1 {
     display: block;
     font-size: 30px;
