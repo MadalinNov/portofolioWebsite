@@ -1067,7 +1067,7 @@ textarea:focus,
   .tech {
     width: 60%;
     height: 70%;
-    top: 60%;
+    top: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
