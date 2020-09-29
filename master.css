@@ -1127,7 +1127,7 @@ textarea:focus,
     font-size: 1.8rem;
   }
   #projects{
-  min-height:100%;
+  min-height:100vw;
   }
   .projectsWrapper {
     min-height:100%;
