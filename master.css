@@ -596,7 +596,7 @@ h2 {
 .projectsWrapper {
   position: absolute;
   min-width: 80%;
-  height: 65%;
+  min-height: 65%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
