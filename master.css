@@ -572,8 +572,8 @@ h2 {
 /* PROJECTS */
 #projects {
   position: relative;
-  min-height: 100vh;
-  width: 100vw;
+  min-height: 100%;
+  width: 100%;
   transition: 0.3s ease;
 }
 
@@ -1122,6 +1122,9 @@ textarea:focus,
   }
   .scrollArrow {
     font-size: 1.8rem;
+  }
+  #projects{
+  min-height:100%;
   }
   .projectsWrapper {
     display: flex;
